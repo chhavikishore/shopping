@@ -1,0 +1,593 @@
+body{
+    background-image:url("../images/banner_image1.jpg");
+    padding:0;
+    margin:0;
+}
+
+#header_nav_bar{
+    height: 40px;
+    position: fixed;
+    background-color: purple;
+    color: antiquewhite;
+    z-index : 1;
+    width: 100%;
+}
+
+#header_nav_bar > ul{
+    margin-top:8px;
+    width:100%
+}
+
+#header_nav_bar > ul > li{
+    display: inline;
+    vertical-align: top;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+#header_nav_bar > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+#header_nav_bar > ul > li > a:hover{
+    color: violet;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: purple;
+    color: white;
+    height: 40px;
+    margin-top: -8px;
+    border: none;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: purple;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: violet;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: violet;
+}
+
+#big_image{
+    background: url("../images/banner.jpg") no-repeat;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#big_image_text{
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    color: purple;
+    text-shadow: 5px 5px magenta;
+    position: absolute;
+    top: 400px;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
+
+#brand{
+    display: inline;
+}
+
+#brand_name{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 80px;
+    color: purple;
+    text-shadow: 5px 5px magenta;
+    position: absolute;
+    top: 200px;
+    left: 520px;
+}
+
+#banner_logo{
+    height: 25%;
+    margin-top: 220px;
+    margin-left: -310px;
+    position: absolute;
+}
+
+.main_section{
+    width:100%;
+}
+
+.section_title{
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: purple;
+    text-shadow: 4px 4px violet;
+    background: wheat;
+}
+
+.small_image{
+    height:300px;
+    width:14%;
+    padding-left:10px;
+}
+
+.small_image:hover{
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.details_section{
+    padding-left: 10px;
+    width: 22%;
+    font-family: sans-serif;
+}
+
+.details{
+    position: relative;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.buy{
+    background-color:#7ba52a;
+    color:white;
+    font-size:20px;
+    width:120px;
+    height: 30px;
+}
+
+#flexbox_why_us{
+    display: flex;
+    justify-content: space-between;
+    background: wheat;
+    /* padding: 4% 2%; */
+}
+
+.why_us{
+    height: 250px;
+    /* background: white; */
+    width: 25%;
+}
+
+#why_us_title{
+    font-family: 'sans-serif';
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: purple;
+    text-shadow: 4px 4px violet;
+    background: wheat;
+}
+
+.fa {
+    font-size: 30px !important;
+    margin-top: 20%;
+}
+
+#footer_nav{
+    background-color: purple;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border-top: .1vh solid violet;
+}
+
+#footer_nav > a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 0px 10px;
+}
+
+#logo{
+    float: left;
+    height: 40px;
+    margin-top:-8px;
+}
+
+#contacts_title{
+    padding-top:2%;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    background: purple;
+    font-size:25px;
+    color:white;
+    margin-bottom:0px;
+    text-align: center;
+}
+
+#contacts{
+    background: purple;
+    display: flex;
+    color:white;
+    font-size:20px;
+    justify-content: space-around;
+}
+
+.location{
+    flex-direction: column;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+#brands_section{
+    text-align:center;
+    display: inline;
+    font-family:'Fira Sans Extra Condensed', sans-serif; 
+    background:wheat;
+}
+
+#top_brand{
+    font-size:50px;
+    color: purple;
+    
+}
+
+.title{
+    font-size:40px;
+    color: purple;
+}
+
+.desc{
+   font-size: 20px;
+}
+
+@media (max-width : 400px){
+
+    #big_image{
+        height: 550px;
+    }
+
+    #header_nav_bar > ul {
+        padding-left: inherit;
+    }
+
+    #header_nav_bar > ul > li {
+        padding-left: 10px;
+    }
+
+    #logo{
+        padding-right: 0px;
+    }
+
+    .flexbox{
+        flex-direction: column;
+    }
+
+    .small_image{
+        width: 80%;
+        align-self: center;
+    }
+
+    .details_section{
+        width:100%;
+        text-align: center;
+        padding: 5px 0px;
+        font-size:18px;
+    }
+
+    #big_image_text{
+        padding-top:60px;
+        font-size: 40px;
+        top:200px;
+    }
+
+    .section_title{
+        font-size: 40px;
+    }
+
+    #why_us_title{
+        font-size: 40px;
+    }
+
+    #flexbox_why_us{
+        flex-direction: column;
+    }
+
+    .why_us{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 400px) and (max-width : 700px){
+
+    #big_image{
+        height: 650px;
+    }
+
+    #header_nav_bar > ul > li {
+        padding-left: 10px;
+    }
+
+    .flexbox{
+        width:100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .small_image{
+        width: 50%;
+        padding: 20px 5px;
+
+    }
+
+    .details_section{
+        width:45%;
+        padding: 20px 5px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #big_image_text{
+        padding-top:60px;
+        font-size: 60px;
+        top: 250px;
+    }
+
+    .section_title{
+        margin-top:0px;
+        margin-bottom:10px;
+        font-size: 40px;
+    }
+
+    #flexbox_why_us{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #why_us_title{
+        font-size: 40px;
+    }
+
+    .why_us{
+        width: 45%;
+        height: 160px;
+        padding: 2%;
+    }
+}
+
+@media (min-width: 700px) and (max-width : 1000px){
+
+    #header_nav_bar > ul > li {
+        padding-left: 10px;
+    }
+
+    .flexbox{
+        width:100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .small_image{
+        width: 25%;
+        padding: 20px 5px;
+
+    }
+
+    .details_section{
+        width:20%;
+        padding: 20px 5px;
+        font-size:18px;
+    }
+
+    .flexbox > section:last-child{
+        margin-right:50%;
+    }
+
+    #big_image_text{
+        padding-top:70px;
+        font-size: 40px;
+        top: 300px;
+    }
+
+    .section_title{
+        margin-top:0px;
+        margin-bottom:10px;
+        font-size: 40px;
+    }
+
+    .why_us{
+        width: 25%;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width : 1440px){
+    .details_section{
+        font-size:18px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width : 1440px){
+    .details_section{
+        font-size:20px;
+    }
+}
+
+
+@media (min-width : 320px) and (max-width : 365px){  /* For hero section text and logo */
+    #brand_name{
+        font-size:40px;
+        top: 100px;
+        left: 125px;
+    }
+
+    #banner_logo{
+        height: 70px;
+        margin-top: 125px;
+        margin-left: -140px;
+    }  
+
+    #big_image_text{
+        font-size:40px;
+    }
+}
+
+@media (min-width: 365px) and (max-width : 415px){   /* For hero section text and logo */
+    #brand_name{
+        font-size:50px;
+        top: 175px;
+        left: 145px;
+    }
+
+    #banner_logo{
+        height: 80px;
+        margin-top: 200px;
+        margin-left: -140px;
+    }
+
+    #big_image_text{
+        font-size:50px;
+    }
+}
+
+@media (min-width: 415px) and (max-width : 530px){   /* For hero section text and logo */
+    #brand_name{
+        font-size: 60px;
+        top: 165px;
+        left: 200px;
+    }
+
+    #banner_logo{
+        height: 100px;
+        top: -30px;
+        left: 400px;
+    }
+
+    #big_image_text{
+        font-size:60px;
+    }
+}
+
+@media (min-width: 530px) and (max-width : 630px){   /* For hero section text and logo */
+    #brand_name{
+        font-size:70px;
+        top: 150px;
+        left: 230px;
+    }
+
+    #banner_logo{
+        height: 120px;
+        top: -40px;
+        left: 420px;
+    }
+}
+
+@media (min-width: 630px) and (max-width : 730px){   /* For hero section text and logo */
+    #brand_name{
+        font-size: 70px;
+        left: 300px;
+    }
+
+    #banner_logo{
+        height: 120px;
+        left: 460px;
+    }
+}
+
+@media (min-width: 730px) and (max-width : 830px){   /* For hero section text and logo */
+    #brand_name{
+        font-size: 70px;
+        left: 300px;
+    }
+
+    #banner_logo{
+        height: 120px;
+        left: 460px;
+    }
+}
+
+@media (min-width: 830px) and (max-width : 1030px){   /* For hero section text and logo */
+    #brand_name{
+        font-size: 70px;
+        left: 400px;
+    }
+
+    #banner_logo{
+        height: 120px;
+        left: 550px;
+    }
+}
+
+@media (min-width: 1030px) and (max-width : 1230px){   /* For hero section text and logo */
+    #brand_name{
+        font-size: 70px;
+        left: 400px;
+    }
+
+    #banner_logo{
+        height: 120px;
+        left: 550px;
+    }
+}
+
+@media (min-width: 1230px) and (max-width : 1440px){   /* For hero section text and logo */
+    #brand_name{
+        font-size: 70px;
+        left: 550px;
+    }
+
+    #banner_logo{
+        height: 140px;
+        left: 700px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width : 2560px){   /* For hero section text and logo */
+    #brand_name{
+        font-size: 70px;
+        left: 1180px;
+    }
+
+    #banner_logo{
+        height: 120px;
+        left:1340px;
+    }
+}
