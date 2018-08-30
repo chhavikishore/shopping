@@ -275,6 +275,8 @@ body{
 
 .desc{
    font-size: 20px;
+   padding-right: 1%;
+   padding-left:1%;
 }
 
 @media (max-width : 400px){
@@ -423,7 +425,7 @@ body{
 
     #big_image_text{
         padding-top:70px;
-        font-size: 40px;
+        font-size: 60px;
         top: 300px;
     }
 
@@ -568,7 +570,7 @@ body{
     }
 }
 
-@media (min-width: 1230px) and (max-width : 1440px){   /* For hero section text and logo */
+@media (min-width: 1230px) and (max-width : 1441px){   /* For hero section text and logo */
     #brand_name{
         font-size: 70px;
         left: 550px;
@@ -580,7 +582,7 @@ body{
     }
 }
 
-@media (min-width: 1440px) and (max-width : 2560px){   /* For hero section text and logo */
+@media (min-width: 1441px) and (max-width : 2560px){   /* For hero section text and logo */
     #brand_name{
         font-size: 70px;
         left: 1180px;
