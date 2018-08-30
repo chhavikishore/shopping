@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/index.css">  
-        <link rel="icon" type="image/x-icon" href="https://github.com/chhavikishore/chhavikishore.github.io/images/logo.ico"/>
+        <link rel="icon" type="image/x-icon" href="https://github.com/chhavikishore/shopping/blob/master/images/logo.ico"/>
     </head>
     <body>
         <!-- HEADER SECTION -->
@@ -52,7 +52,7 @@
                     <p>Color : Red</p>
                     <p>Occassion : Party Wear</p>
                     <br>
-                    <input type="button" class="buy" value="BUY NOW">
+                    <input type="button" class="buy" value="BUY NOW" onclick="buy_now()">
                 </section>
                 <img class="small_image" src="images/pink_saree.jpg" alt="Pink Saree">
                 <section class="details_section">
@@ -62,7 +62,7 @@
                     <p>Color : Pink</p>
                     <p>Occassion : Party Wear</p>
                     <br>
-                    <input type="button" class="buy" value="BUY NOW">
+                    <input type="button" class="buy" value="BUY NOW" onclick="buy_now()">
                 </section>
                 <img class="small_image" src="images/black_saree.jpg" alt="Black Saree">
                 <section class="details_section">
@@ -72,7 +72,7 @@
                     <p>Color : Pink</p>
                     <p>Occassion : Party Wear</p>
                     <br>
-                    <input type="button" class="buy" value="BUY NOW">
+                    <input type="button" class="buy" value="BUY NOW" onclick="buy_now()">
                 </section>            
             </section>
         </section> 
@@ -86,7 +86,7 @@
                     <p>Fabric : Silk</p>
                     <p>Color : Green</p>
                     <p>Occassion : Party Wear</p>
-                    <input type="button" class="buy" value="BUY NOW">
+                    <input type="button" class="buy" value="BUY NOW" onclick="buy_now()">
                 </section>
                 <img class="small_image" src="images/jpdhpuri_suit.jpg" alt="Jodhpuri Suit">
                 <section class="details_section">
@@ -95,7 +95,7 @@
                     <p>Fabric : Jodhpuri Silk</p>
                     <p>Color : Red</p>
                     <p>Occassion : Party Wear</p>
-                    <input type="button" class="buy" value="BUY NOW">
+                    <input type="button" class="buy" value="BUY NOW" onclick="buy_now()">
                 </section>
                 <img class="small_image" src="images/teel_green_suit.jpg" alt="Teel Green Suit">
                 <section class="details_section">
@@ -104,7 +104,7 @@
                     <p>Fabric : Silk</p>
                     <p>Color : Teel Green</p>
                     <p>Occassion : Party Wear</p>
-                    <input type="button" class="buy" value="BUY NOW">
+                    <input type="button" class="buy" value="BUY NOW" onclick="buy_now()">
                 </section>
             </section>
         </section> 
@@ -118,7 +118,7 @@
                     <p>Fabric : Cotton</p>
                     <p>Color : Navy Blue</p>
                     <p>Occassion : Casual Wear</p>
-                    <input type="button" class="buy" value="BUY NOW">
+                    <input type="button" class="buy" value="BUY NOW" onclick="buy_now()">
                 </section>
                 <img class="small_image" src="images/baby_gown.jpg" alt="Gown">
                 <section class="details_section">
@@ -127,7 +127,7 @@
                     <p>Fabric : Net</p>
                     <p>Color : Baby Pink</p>
                     <p>Occassion : Party Wear</p>
-                    <input type="button" class="buy" value="BUY NOW">
+                    <input type="button" class="buy" value="BUY NOW" onclick="buy_now()">
                 </section>
                 <img class="small_image" src="images/kid_jean.jpg" alt="Jeans">
                 <section class="details_section">
@@ -136,7 +136,7 @@
                     <p>Fabric : Jeans</p>
                     <p>Color : Blue</p>
                     <p>Occassion : Casual Wear</p>
-                    <input type="button" class="buy" value="BUY NOW">
+                    <input type="button" class="buy" value="BUY NOW" onclick="buy_now()">
                 </section>
             </section>
         </section>  
@@ -195,18 +195,22 @@
         </footer>
 
         <script>  // for read more brand button in mobile size
-                function show_more_brand() {
-                  var moreText = document.getElementById("not_for_mobile");
-                  var btnText = document.getElementById("read_more_brand");
-                
-                  if (moreText.style.display === "none") {
-                    btnText.innerHTML = "Show less brands"; 
-                    moreText.style.display = "inline";
-                  } else {
-                    btnText.innerHTML = "Show more brands"; 
-                    moreText.style.display = "none";
-                  }
+            function show_more_brand() {
+                var moreText = document.getElementById("not_for_mobile");
+                var btnText = document.getElementById("read_more_brand");
+            
+                if (moreText.style.display === "none") {
+                btnText.innerHTML = "Show less brands"; 
+                moreText.style.display = "inline";
+                } else {
+                btnText.innerHTML = "Show more brands"; 
+                moreText.style.display = "none";
                 }
-                </script>
+            }
+
+            function buy_now(){
+                alert("Thank you so much for shopping with us. ORDER has been placed.");
+            }
+        </script>
     </body>
 </html>
