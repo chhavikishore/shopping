@@ -239,6 +239,7 @@ body{
     color:white;
     margin-bottom:0px;
     text-align: center;
+    font-weight: lighter;
 }
 
 #contacts{
@@ -293,7 +294,7 @@ body{
 @media (max-width : 400px){
 
     #big_image{
-        height: 600px;
+        height: 700px;
     }
 
     #header_nav_bar > ul {
@@ -325,9 +326,8 @@ body{
     }
 
     #big_image_text{
-        padding-top:60px;
         font-size: 40px;
-        top:200px;
+        top:235px;
     }
 
     .section_title{
@@ -345,13 +345,21 @@ body{
     .why_us{
         width: 100%;
     }
+
+    #top_brand{
+        font-size:40px;
+    }
+
+    .title{
+        font-size: 25px;
+    }
     
 }
 
 @media (min-width: 400px) and (max-width : 700px){
 
     #big_image{
-        height: 650px;
+        height: 700px;
     }
 
     #header_nav_bar > ul > li {
@@ -403,6 +411,14 @@ body{
         width: 45%;
         height: 160px;
         padding: 2%;
+    }
+
+    #top_brand{
+        font-size:40px;
+    }
+
+    .title{
+        font-size: 28px;
     }
 }
 
@@ -486,13 +502,13 @@ body{
 @media (min-width: 365px) and (max-width : 415px){   /* For hero section text and logo */
     #brand_name{
         font-size:50px;
-        top: 175px;
-        left: 145px;
+        top: 150px;
+        left: 140px;
     }
 
     #banner_logo{
         height: 80px;
-        margin-top: 200px;
+        margin-top: 1750px;
         margin-left: -140px;
     }
 
@@ -503,19 +519,19 @@ body{
 
 @media (min-width: 415px) and (max-width : 530px){   /* For hero section text and logo */
     #brand_name{
-        font-size: 60px;
-        top: 165px;
-        left: 200px;
+        font-size: 50px;
+        top: 190px;
+        left: 150px;
     }
 
     #banner_logo{
         height: 100px;
-        top: -30px;
-        left: 400px;
+        top: 20px;
+        left: 350px;
     }
 
     #big_image_text{
-        font-size:60px;
+        font-size:50px;
     }
 }
 
