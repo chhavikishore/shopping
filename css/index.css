@@ -2,6 +2,7 @@ body{
     background-image:url("../images/banner_image1.jpg");
     padding:0;
     margin:0;
+    height: 100%;
 }
 
 #header_nav_bar{
@@ -93,6 +94,7 @@ body{
     text-align: center;
     background-attachment: fixed;
     background-size: cover;
+    background-size:contain;
 }
 
 #big_image_text{
@@ -101,7 +103,7 @@ body{
     color: purple;
     text-shadow: 5px 5px magenta;
     position: absolute;
-    top: 400px;
+    top: 330px;
     left: 10%;
     right: 10%;
     text-align: center;
@@ -117,13 +119,13 @@ body{
     color: purple;
     text-shadow: 5px 5px magenta;
     position: absolute;
-    top: 200px;
+    top: 170px;
     left: 520px;
 }
 
 #banner_logo{
     height: 25%;
-    margin-top: 220px;
+    margin-top: 190px;
     margin-left: -310px;
     position: absolute;
 }
@@ -184,17 +186,15 @@ body{
     display: flex;
     justify-content: space-between;
     background: wheat;
-    /* padding: 4% 2%; */
 }
 
 .why_us{
     height: 250px;
-    /* background: white; */
     width: 25%;
 }
 
 #why_us_title{
-    font-family: 'sans-serif';
+    font-family: 'Pacifico', cursive;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
@@ -233,10 +233,10 @@ body{
 }
 
 #contacts_title{
-    padding-top:2%;
+    padding:2%;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     background: purple;
-    font-size:25px;
+    font-size:20px;
     color:white;
     margin-bottom:0px;
     text-align: center;
@@ -246,13 +246,23 @@ body{
     background: purple;
     display: flex;
     color:white;
-    font-size:20px;
+    font-size:18px;
     justify-content: space-around;
+}
+
+#contacts :last-child{
+    border-right:0px;
 }
 
 .location{
     flex-direction: column;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
+    border-right:0.1vh solid magenta;
+    padding: 0px 8%;
+}
+
+.location > p{
+    text-align: center;
 }
 
 #brands_section{
@@ -265,7 +275,9 @@ body{
 #top_brand{
     font-size:50px;
     color: purple;
-    
+    font-family: 'Pacifico', cursive;   
+    padding-left: 1%;
+    padding-right: 1%; 
 }
 
 .title{
@@ -282,7 +294,7 @@ body{
 @media (max-width : 400px){
 
     #big_image{
-        height: 550px;
+        height: 600px;
     }
 
     #header_nav_bar > ul {
@@ -457,13 +469,13 @@ body{
 @media (min-width : 320px) and (max-width : 365px){  /* For hero section text and logo */
     #brand_name{
         font-size:40px;
-        top: 100px;
+        top: 140px;
         left: 125px;
     }
 
     #banner_logo{
         height: 70px;
-        margin-top: 125px;
+        margin-top: 155px;
         margin-left: -140px;
     }  
 
@@ -591,5 +603,17 @@ body{
     #banner_logo{
         height: 120px;
         left:1340px;
+    }
+}
+
+@media screen and (max-width : 500px)
+{
+    #contacts{
+        flex-direction: column;
+    }
+
+    .location{
+        padding:1% 25%; 
+        border-right: 0px;
     }
 }
