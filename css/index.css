@@ -172,6 +172,7 @@ body{
     position: relative;
     font-weight: bold;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .buy{
@@ -233,7 +234,7 @@ body{
 }
 
 #contacts_title{
-    padding:2%;
+    padding:0.8%;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     background: purple;
     font-size:20px;
@@ -259,7 +260,6 @@ body{
     flex-direction: column;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     border-right:0.1vh solid magenta;
-    padding: 0px 8%;
     width: 33.3%;
 }
 
@@ -298,7 +298,7 @@ body{
     display: none;
 }
 
-@media (max-width : 400px){
+@media (max-width : 401px){
 
     #big_image{
         height: 700px;
@@ -321,7 +321,8 @@ body{
     }
 
     .small_image{
-        width: 80%;
+        width: 65%;
+        height: 200px;
         align-self: center;
     }
 
@@ -329,7 +330,7 @@ body{
         width:100%;
         text-align: center;
         padding: 5px 0px;
-        font-size:18px;
+        font-size:16px;
     }
 
     #big_image_text{
@@ -350,7 +351,14 @@ body{
     }
 
     .why_us{
-        width: 100%;
+        width: 70%;
+        padding: 0% 15%;
+        height: 120px;
+    }
+
+    .why_us:last-child{
+        width: 50%;
+        padding: 0% 25%;
     }
 
     #top_brand{
@@ -363,7 +371,7 @@ body{
     
 }
 
-@media (min-width: 400px) and (max-width : 700px){
+@media (min-width: 401px) and (max-width : 700px){
 
     #big_image{
         height: 700px;
@@ -470,6 +478,7 @@ body{
 
     .why_us{
         width: 25%;
+        height: 180px;;
     }
 
     #logo{
@@ -648,6 +657,7 @@ body{
     .location{
         width: 80%; 
         border-right: 0px;
+        padding: 0% 10%;
     }
 }
 
